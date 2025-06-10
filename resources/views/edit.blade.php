@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Purple NavBar</title>
+  <title>Product Management System</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
@@ -36,7 +36,7 @@
   <div class="bg-purple-50 flex items-center justify-center min-h-screen">
      <form action="{{route('update',$ourpost->id)}}" method="Post" class="bg-purple-100 p-8 rounded-2xl shadow-lg w-full max-w-md space-y-6" enctype="multipart/form-data">
         @csrf
-    <h2 class="text-2xl font-bold text-purple-800 text-center">Edit Your Info</h2>
+    <h2 class="text-2xl font-bold text-purple-800 text-center">Edit Product Info</h2>
 
     <!-- Name -->
     <div>

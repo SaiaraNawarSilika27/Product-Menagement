@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function showRegister() {
-    return view('register');
+    return view('welcome');
 }
 
 public function register(Request $request) {
@@ -47,6 +47,6 @@ public function logout(Request $request) {
     Auth::logout();
     $request->session()->invalidate();
     $request->session()->regenerateToken();
-    return redirect('/');
+    return redirect('/login');
 }
 }

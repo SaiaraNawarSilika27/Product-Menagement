@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Purple NavBar</title>
+  <title>Product Management System</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
@@ -12,11 +12,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
-          <span class="font-bold text-xl">Create</span>
+          <span class="font-bold text-xl">Create Product</span>
         </div>
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
-           <a href="/" class="bg-white text-purple-600 hover:bg-purple-300 px-2 py-1 rounded-md shadow-md font-semibold inline-block">
+           <a href="/home" class="bg-white text-purple-600 hover:bg-purple-300 px-2 py-1 rounded-md shadow-md font-semibold inline-block">
   Back to home
 </a>
 </div>
@@ -36,7 +36,7 @@
   <div class="bg-purple-50 flex items-center justify-center min-h-screen">
      <form action="{{route('store')}}" method="Post" class="bg-purple-100 p-8 rounded-2xl shadow-lg w-full max-w-md space-y-6" enctype="multipart/form-data">
         @csrf
-    <h2 class="text-2xl font-bold text-purple-800 text-center">Submit Your Info</h2>
+    <h2 class="text-2xl font-bold text-purple-800 text-center">Submit Product Info</h2>
 
     <!-- Name -->
     <div>
